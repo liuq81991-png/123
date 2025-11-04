@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豪華火鍋 | 歡迎點餐</title>
+    <style>
+        body {
+            font-family: '微軟正黑體', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            /* 設置背景圖：使用您上傳的圖片檔案名稱 */
+            background-image: url('20251029_063423_0000.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* 內容容器：確保文字和按鈕在圖片上有良好的對比度 */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* 黑色半透明背景 */
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            max-width: 80%; /* 避免手機上佔滿全寬 */
+        }
+
+        h1 {
+            color: #ffd700; /* 金色標題 */
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        /* 按鈕樣式 */
+        .menu-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            background-color: #d9487c; /* 熱情的粉紅色 */
+            border: none;
+            border-radius: 8px;
+            text-decoration: none; 
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-button:hover {
+            background-color: #ff6347; 
+            transform: scale(1.05); 
+        }
+
+        /* 媒體查詢 (手機適配) */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+            .menu-button {
+                font-size: 1.4em;
+                padding: 12px 25px;
+            }
+            .container {
+                padding: 30px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔥🔥 歡迎光臨豪華火鍋 🔥🔥</h1>
+        <p>點擊下方按鈕，開始您的專屬點餐體驗！</p>
+        
+        <a href="menu.html" class="menu-button">
+            查看完整菜單
+        </a>
+    </div>
+
+</body>
+</html>
